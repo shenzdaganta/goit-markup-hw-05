@@ -71,6 +71,22 @@
     color: var(--OCEAN);
 }
 
+.active {
+    color: var(--OCEAN);
+
+}
+
+.active::after {
+    content: " ";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--IRIS);
+    position: relative;
+    top: 20px;
+}
+
 .navcontact a {
     color:var(--SLATE);
     text-decoration: none;
@@ -97,6 +113,7 @@
     background-repeat: no-repeat;
     text-align: center;
     padding: 188px 472px;
+    margin-top: 5px;
 }
 
 .h1 {
@@ -416,6 +433,49 @@
 .app {
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
+
+}
+
+.appsection li {
+    width: 360px;
+}
+
+.appsection li img {
+    width: 100%;
+    display: block;
+
+}
+
+.app:hover .app-caption {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.app {
+    overflow: hidden;
+}
+
+
+.app-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.app-caption {
+    position: absolute;
+    background-color: rgba(77, 90, 229, 0.8);
+    color: var(--WHITE);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-caption p {
+    padding: 40px 32px;
 }
 
 .apptext {
