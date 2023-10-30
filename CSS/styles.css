@@ -176,6 +176,16 @@
     color: var(--OCEAN);
     margin-left: auto;
     display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close-button:hover {
+    fill: currentColor;
+    border: 1px solid currentColor;
 }
 
 /*End of Modal Style*/
